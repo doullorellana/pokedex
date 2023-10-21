@@ -21,7 +21,7 @@ function Finder() {
       e.preventDefault();
   
       const texto = e.target[0].value;
-      setPokemon(texto);
+      setPokemon(texto.toLowerCase());
       // console.log(texto);
     };
 
