@@ -5,16 +5,9 @@
   font-family: sans-serif;
 }
 
-@media (max-width: 768px) {
-  #content {
-    display: flex; /* Para que los elementos se vayan acomodando en la pantalla*/
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
-}
+/* ------------------ */
+/* FINDER.JSX */
+/* ------------------ */
 
 main {
   height: 100vh;
@@ -28,6 +21,17 @@ h1 {
   position: absolute;
   top: 10px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  #content {
+    display: flex; /* Para que los elementos se vayan acomodando en la pantalla*/
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 #content {
@@ -113,4 +117,55 @@ form > div > button {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* ------------------ */
+/* CARD.JSX */
+/* ------------------ */
+
+#main{
+  min-height: 100vh;
+}
+
+#main > header {
+  height: 10vh;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+#divImgLogo {
+  height: 80%;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#divImgLogo > img {
+  height: 100%;
+}
+
+#contenido {
+  display: flex;
+  width: 100vw;
+}
+
+#divCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 30 0;
+  min-width: 50vw;
+}
+
+.card {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#sideBar {
+  width: 50vw;
 }
